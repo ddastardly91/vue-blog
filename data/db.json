@@ -11,6 +11,12 @@
       "title": "Top 5 CSS tips!",
       "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ducimus, similique alias exercitationem eligendi dolor aut porro veritatis asperiores odit reprehenderit fugit neque provident cum distinctio incidunt sed aliquid voluptates. Ullam, tempora. Unde laboriosam quibusdam deserunt animi fugit facere. Reprehenderit, alias nesciunt expedita quasi eaque quaerat, exercitationem nisi quam assumenda maiores corrupti inventore aut voluptatum ipsam facilis, est eius eveniet.",
       "tags": ["webdev", "coding", "css"]
+    },
+    {
+      "title": "This is a new blog post",
+      "body": "blah blah blah blah",
+      "tags": ["webdev", "coding"],
+      "id": 3
     }
   ]
 }

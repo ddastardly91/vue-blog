@@ -7,11 +7,6 @@ const getPost = (id) => {
   //functions
   const load = async () => {
     try {
-      //simulate delay
-      await new Promise((resolve) => {
-        setTimeout(resolve, 1500);
-      });
-
       let data = await fetch("http://localhost:3000/posts/" + id);
       if (!data.ok) {
         throw Error("that post does not exist");

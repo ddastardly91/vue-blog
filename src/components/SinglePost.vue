@@ -18,4 +18,32 @@ const snippet = computed(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.post {
+  margin: 0 40px 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed lightgray;
+}
+
+.post h3 {
+  display: inline-block;
+  position: relative;
+  font-size: 26px;
+  color: white;
+  margin-bottom: 10px;
+  max-width: 400px;
+}
+
+.post h3::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #07c988;
+  position: absolute;
+  z-index: -1;
+  padding-right: 40px;
+  left: -20px;
+  transform: rotateZ(-1deg);
+}
+</style>

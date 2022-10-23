@@ -24,6 +24,8 @@ load();
 
 <style scoped>
 .home {
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
 }
 </style>

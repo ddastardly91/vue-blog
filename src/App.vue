@@ -1,13 +1,10 @@
 <template>
+  <Navbar />
   <router-view />
 </template>
 
-<script>
-export default {
-  name: "Home",
-
-  setup() {},
-};
+<script setup>
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <style scoped>

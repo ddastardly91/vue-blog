@@ -1,8 +1,9 @@
 <template>
   <div class="tag">
     <div v-if="error"></div>
-    <div v-if="posts.length">
+    <div v-if="posts.length" class="layout">
       <PostList :posts="postsWithTag" />
+      <TagCloud :posts="posts" />
     </div>
     <div v-else>
       <Spinner />
@@ -14,6 +15,7 @@
 import Spinner from "../components/Spinner.vue";
 import PostList from "../components/PostList.vue";
 import getPosts from "../composables/getPosts";
+import TagCloud from "../components/TagCloud.vue";
 import { useRoute } from "vue-router";
 import { computed } from "@vue/reactivity";
 

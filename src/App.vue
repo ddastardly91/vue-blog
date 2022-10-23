@@ -13,6 +13,5 @@ export default {
 <style scoped>
 #app {
   font-family: "Poppins", sans-serif;
-  text-align: center;
 }
 </style>

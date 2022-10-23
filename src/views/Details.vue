@@ -4,10 +4,15 @@
     <h3>{{ post.title }}</h3>
     <p class="pre">{{ post.body }}</p>
   </div>
+  <div v-else>
+    <Spinner />
+  </div>
 </template>
 
 <script setup>
 import getPost from "../composables/getPost";
+import Spinner from "../components/Spinner.vue";
+
 const props = defineProps(["id"]);
 
 const { post, error, load } = getPost(props.id);
@@ -15,7 +20,18 @@ load();
 </script>
 
 <style scoped>
-.details-page {
-  text-align: center;
+.post {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.post p {
+  color: #444;
+  line-height: 1.5em;
+  margin-top: 40px;
+}
+
+.pre {
+  white-space: pre-wrap;
 }
 </style>

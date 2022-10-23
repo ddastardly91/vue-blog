@@ -1,5 +1,6 @@
 <template>
   <div class="tag">
+    <h1>Filter by: #{{ route.params.tag }}</h1>
     <div v-if="error"></div>
     <div v-if="posts.length" class="layout">
       <PostList :posts="postsWithTag" />
@@ -29,4 +30,10 @@ const postsWithTag = computed(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.tag {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+</style>
